@@ -10,7 +10,13 @@
     <div>
       <p>We have successfully created an ingress controller and we can see this.</p>
       <p>Consistency and Discipline is the secret to success in the tech industry</p>
-      <p>It is interesting to note that we deployed this app on <b>{{ date }}</b> </p>
+      <p>It is interesting to note that we deployed this app on    
+        <b> </b><script type="text/javascript">
+         document.write(utcdate)
+        </script></b></p>
       </div>
   </body>
+  <script>
+    var utcdate = new Date($`{{ date }}`).toUTCString();
+</script>
 </html>
