@@ -7,7 +7,7 @@ app = Flask(__name__)
 def main():
     date = str(datetime.now()).split()[0]
     print(date)
-    return render_template('index.html', date=date)
+    return render_template('index.html')
                             
 
 
