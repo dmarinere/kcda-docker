@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
+    date = str(datetime.now()).split()[0]
     return ""
 
 
