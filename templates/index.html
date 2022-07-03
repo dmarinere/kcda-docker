@@ -2,21 +2,24 @@
 <head>
   <title>My new Kubernetes App</title>
 </head>
+<script>
+  console.log("Hello from the browser!");
+  var utcdate = new Date().toUTCString();
+  console.log(utcdate)
+</script>
 <html>
   <body>
     <div>
-      <h1>Thank you for listening</h1>
+      <h2>Thank you for listening to my talk</h2>
     </div>
     <div>
       <p>We have successfully created an ingress controller and we can see this.</p>
       <p>Consistency and Discipline is the secret to success in the tech industry</p>
-      <p>It is interesting to note that we deployed this app on    
-        <b> </b><script type="text/javascript">
+      <p>It is interesting to note that today's date and time is   
+        <b> <script type="text/javascript">
          document.write(utcdate)
         </script></b></p>
       </div>
   </body>
-  <script>
-    var utcdate = new Date($`{{ date }}`).toUTCString();
-</script>
+
 </html>
